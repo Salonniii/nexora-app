@@ -18,48 +18,48 @@ The app helps students track their coding profiles, get personalized career anal
     <td align="center"><b>Dashboard</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/login.png" width="300"/></td>
-    <td><img src="screenshots/dashboard.png" width="300"/></td>
+    <td><img src="screenshots/login.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/dashboard.png.jpeg" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><b>GitHub Activity</b></td>
     <td align="center"><b>DSA Topic Strength</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/github_activity.png" width="300"/></td>
-    <td><img src="screenshots/dsa_topics.png" width="300"/></td>
+    <td><img src="screenshots/github_activity.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/dsa_topics.png.jpeg" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><b>Profile</b></td>
     <td align="center"><b>Coding Profiles</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/profile.png" width="300"/></td>
-    <td><img src="screenshots/coding_profiles.png" width="300"/></td>
+    <td><img src="screenshots/profile.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/coding_profiles.png.jpeg" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><b>AI Coach</b></td>
     <td align="center"><b>Strengths Analysis</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/ai_coach.png" width="300"/></td>
-    <td><img src="screenshots/ai_strengths.png" width="300"/></td>
+    <td><img src="screenshots/ai_coach.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/ai_strengths.png.jpeg" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><b>Chat with Nova</b></td>
     <td align="center"><b>Action Plan</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/nova_chat.png" width="300"/></td>
-    <td><img src="screenshots/action_plan.png" width="300"/></td>
+    <td><img src="screenshots/nova_chat.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/action_plan.png.jpeg" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><b>Roadmap</b></td>
     <td align="center"><b>Roadmap Details</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/roadmap.png" width="300"/></td>
-    <td><img src="screenshots/roadmap_details.png" width="300"/></td>
+    <td><img src="screenshots/roadmap.png.jpeg" width="300"/></td>
+    <td><img src="screenshots/roadmap_details.png.jpeg" width="300"/></td>
   </tr>
 </table>
 
