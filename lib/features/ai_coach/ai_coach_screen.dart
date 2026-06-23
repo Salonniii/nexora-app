@@ -198,10 +198,23 @@ class _AICoachScreenState extends State<AICoachScreen>
 
   Future<void> _runSmartAnalysis() async {
     if (profile == null) return;
+
+    // BUG FIX: previously, on re-analyze, old `analysisResult`/`platformData`
+    // stayed populated while a NEW request was in flight. If that new request
+    // failed (e.g. Gemini quota error), the screen kept silently showing the
+    // OLD GitHub/LeetCode/GFG stats underneath a fresh error message — making
+    // it look like "re-analyze doesn't show my repos" when actually it was
+    // showing stale data from the last successful run, not the new one.
+    //
+    // Fix: clear old results immediately when a new analysis starts, so the
+    // UI honestly reflects "no result yet" while loading, instead of showing
+    // possibly-stale data next to a new error.
     setState(() {
       isLoading = true;
       errorMessage = null;
       hasAnalyzed = false;
+      analysisResult = null;
+      platformData = null;
     });
 
     try {
@@ -219,6 +232,12 @@ class _AICoachScreenState extends State<AICoachScreen>
         setState(() {
           errorMessage = 'Analysis failed: ${result['error']}';
           isLoading = false;
+          // Still show GitHub/LeetCode/GFG stats if the backend returned them
+          // even though the Gemini text-analysis step failed.
+          if (result['platform_data'] != null) {
+            platformData = result['platform_data'];
+            hasAnalyzed = true;
+          }
         });
         return;
       }
@@ -232,7 +251,7 @@ class _AICoachScreenState extends State<AICoachScreen>
       _fadeController.forward(from: 0);
 
       // Persist so this result survives logout/login — only overwritten
-      // when the user explicitly re-analyzes.
+      // when the user explicitly re-analyzes successfully.
       await _saveAnalysisToCache(result);
     } catch (e) {
       setState(() {
