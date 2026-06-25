@@ -72,6 +72,7 @@ class _AICoachScreenState extends State<AICoachScreen>
     }
     try {
       final data = await supabase.from('profiles').select().eq('id', user.id).single();
+      print("PROFILE DATA = $data");
 
       // FIX 2: Dynamic greeting using actual profile name
       final firstName = (data['full_name'] as String? ?? 'there').split(' ')[0];
