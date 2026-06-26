@@ -5,7 +5,7 @@ The app helps students track their coding profiles, get personalized career anal
 
 ## 🌐 Live Demo
 
-- **🖥️ Website:** [magenta-tarsier-e6e74d.netlify.app](https://magenta-tarsier-e6e74d.netlify.app)
+- **🖥️ Website:** [magenta-tarsier-e6e74d.netlify.app](https://magenta-tarsier-e6e74d.netlify.app/)
 - **🔧 Backend API:** [nexora-backend-h8xr.onrender.com](https://nexora-backend-h8xr.onrender.com)
 
 > ⚠️ The backend runs on a free-tier server — the first request after a period of inactivity may take 30–60 seconds while it spins back up.
@@ -75,7 +75,7 @@ Chat with Nova, your AI mentor, for:
 Pulls live data from your actual coding profiles:
 - **GitHub** — repos, languages, stars
 - **LeetCode** — problems solved, difficulty breakdown, topic strengths
-- **GeeksforGeeks** — coding score, streaks, problem stats
+
 
 ### 🗺️ Personalized Roadmap
 AI-generated 30-60-90 day placement preparation plan based on:
